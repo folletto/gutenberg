@@ -75,7 +75,7 @@ export default function ReusableBlockEdit( {
 	} = useDispatch( reusableBlocksStore );
 
 	const { createSuccessNotice, createErrorNotice } = useDispatch(
-		'core/notices'
+		noticesStore
 	);
 	const save = useCallback( async function () {
 		try {

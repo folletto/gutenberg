@@ -166,7 +166,7 @@ export default function ImageEditor( {
 	clientWidth,
 	setIsEditingImage,
 } ) {
-	const { createErrorNotice } = useDispatch( 'core/notices' );
+	const { createErrorNotice } = useDispatch( noticesStore );
 	const [ inProgress, setIsProgress ] = useState( false );
 	const [ crop, setCrop ] = useState( null );
 	const [ position, setPosition ] = useState( { x: 0, y: 0 } );
